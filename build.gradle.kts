@@ -19,6 +19,9 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation("org.postgresql:postgresql")
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation("org.springframework.cloud:spring-cloud-starter-openfeign:4.0.2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 

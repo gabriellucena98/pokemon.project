@@ -1,0 +1,24 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:postgresql://db.qlkcxvqsvvbmhjtvyfdw.supabase.co:5432/postgres?user=postgres&password=pokeifood2023
+    username: postgres
+    password: pokeifood2023
+    hikari:
+      connection-timeout: 600000
+      maximum-pool-size: 500
+      max-lifetime: 1800000
+      minimum-idle: 20
+      validation-timeout: 3000
+      idle-timeout: 60000

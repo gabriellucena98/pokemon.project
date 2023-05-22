@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS user_master (
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  username VARCHAR(100)
+  email VARCHAR(50)
+  password VARCHAR(50)
+  image VARCHAR(300)
+);
+

@@ -19,7 +19,8 @@ interface PokeClient {
     fun getAllPokemon(): GetAllRequestDto
 
     @RequestMapping(method = [RequestMethod.GET], path = ["pokemon?limit={page}&offset={offSet}"])
-    fun getAllPokemon(@PathVariable("page") page: Int?,
-                      @PathVariable("offSet") offSet: Long?
+    fun getAllPokemon(
+        @PathVariable("page") page: Int?,
+        @PathVariable("offSet") offSet: Long?
     ): GetAllRequestDto
 }
